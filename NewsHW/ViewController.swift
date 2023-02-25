@@ -53,7 +53,9 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = data[indexPath.row].title
         cell.textLabel?.numberOfLines = 0
         let url = URL(string:data[indexPath.row].urlToImage!)
-        cell.imageView?.sd_setImage(with: url)
+        cell.imageView?.sd_setImage(with: url) {_,_,_,_ in
+            tableView.reloadRows(at: [indexPath], with: .fade)
+        }
         return cell
     }
 }
