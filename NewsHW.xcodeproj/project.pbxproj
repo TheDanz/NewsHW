@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050A85A529A93C5D00C570EF /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 050A85A429A93C5D00C570EF /* ObjectMapper */; };
+		050A85A729A93C6D00C570EF /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050A85A629A93C6C00C570EF /* JSONModel.swift */; };
+		050A85AA29A982CC00C570EF /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 050A85A929A982CC00C570EF /* SDWebImage */; };
+		050A85AC29A982CC00C570EF /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 050A85AB29A982CC00C570EF /* SDWebImageMapKit */; };
+		0571925129A82C6B00FC67E7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0571925029A82C6B00FC67E7 /* Moya */; };
+		0598B72B29A829D500CC93D5 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0598B72A29A829D500CC93D5 /* Provider.swift */; };
 		05D0B84F29A824C40069378F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D0B84E29A824C40069378F /* AppDelegate.swift */; };
 		05D0B85129A824C40069378F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D0B85029A824C40069378F /* SceneDelegate.swift */; };
 		05D0B85329A824C40069378F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D0B85229A824C40069378F /* ViewController.swift */; };
@@ -16,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050A85A629A93C6C00C570EF /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		0598B72A29A829D500CC93D5 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		05D0B84B29A824C40069378F /* NewsHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D0B84E29A824C40069378F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05D0B85029A824C40069378F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050A85AA29A982CC00C570EF /* SDWebImage in Frameworks */,
+				050A85A529A93C5D00C570EF /* ObjectMapper in Frameworks */,
+				050A85AC29A982CC00C570EF /* SDWebImageMapKit in Frameworks */,
+				0571925129A82C6B00FC67E7 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,8 @@
 			children = (
 				05D0B84E29A824C40069378F /* AppDelegate.swift */,
 				05D0B85029A824C40069378F /* SceneDelegate.swift */,
+				050A85A629A93C6C00C570EF /* JSONModel.swift */,
+				0598B72A29A829D500CC93D5 /* Provider.swift */,
 				05D0B85229A824C40069378F /* ViewController.swift */,
 				05D0B85429A824C40069378F /* Main.storyboard */,
 				05D0B85729A824C50069378F /* Assets.xcassets */,
@@ -83,6 +97,12 @@
 			dependencies = (
 			);
 			name = NewsHW;
+			packageProductDependencies = (
+				0571925029A82C6B00FC67E7 /* Moya */,
+				050A85A429A93C5D00C570EF /* ObjectMapper */,
+				050A85A929A982CC00C570EF /* SDWebImage */,
+				050A85AB29A982CC00C570EF /* SDWebImageMapKit */,
+			);
 			productName = NewsHW;
 			productReference = 05D0B84B29A824C40069378F /* NewsHW.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,11 @@
 				Base,
 			);
 			mainGroup = 05D0B84229A824C40069378F;
+			packageReferences = (
+				0571924F29A82C6B00FC67E7 /* XCRemoteSwiftPackageReference "Moya" */,
+				050A85A329A93C5D00C570EF /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				050A85A829A982CC00C570EF /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 05D0B84C29A824C40069378F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050A85A729A93C6D00C570EF /* JSONModel.swift in Sources */,
+				0598B72B29A829D500CC93D5 /* Provider.swift in Sources */,
 				05D0B85329A824C40069378F /* ViewController.swift in Sources */,
 				05D0B84F29A824C40069378F /* AppDelegate.swift in Sources */,
 				05D0B85129A824C40069378F /* SceneDelegate.swift in Sources */,
@@ -358,6 +385,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		050A85A329A93C5D00C570EF /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+		050A85A829A982CC00C570EF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		0571924F29A82C6B00FC67E7 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		050A85A429A93C5D00C570EF /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 050A85A329A93C5D00C570EF /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		050A85A929A982CC00C570EF /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 050A85A829A982CC00C570EF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		050A85AB29A982CC00C570EF /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 050A85A829A982CC00C570EF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		0571925029A82C6B00FC67E7 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0571924F29A82C6B00FC67E7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05D0B84329A824C40069378F /* Project object */;
 }
